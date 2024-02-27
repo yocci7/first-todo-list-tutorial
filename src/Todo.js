@@ -6,12 +6,12 @@ const Todo = ({todo, toggleTodo}) => {
       toggleTodo(todo.id);
     };
   return (
-    <div>
+    <div className='tasks'>
       <label>
-        <input 
+        <input
           type='checkbox'
-          checked={todo.completed} 
-          readOnly 
+          checked={todo.completed}
+          readOnly
           onChange={handleTodoClick}
         />
       </label>
